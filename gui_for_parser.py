@@ -2,7 +2,7 @@ from PyQt5 import  QtGui, QtCore, QtWidgets
 from urllib.request import urlopen, urljoin
 import sys
 import re
-
+"""Parser wth Gui, that can show page by url, and parse it by reg ex"""
 
 class MWindow(QtWidgets.QWidget):
     def __init__(self):
@@ -48,6 +48,7 @@ class MWindow(QtWidgets.QWidget):
         self.setLayout(self.form_layout)
 
     def on_open_button_clicked(self):
+        self.url_str = self.url_string_edit.text()
         if self.url_str == '':
             self.t_bowser.setText("NO URL INSERTED")
         else:
