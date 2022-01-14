@@ -174,7 +174,7 @@ class MWindow(QtWidgets.QWidget):
     def main_parse_t_browser_update(self):
         self.main_parse_t_browser.setText(str(self.parsed_list))
 
-
+print('New')
 qapp = QtWidgets.QApplication(sys.argv)
 mw = MWindow()
 mw.show()
